@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+#aside>img {
+    max-width: 65%;
+    height: auto;
+}
+
+.navbar {
+    padding: 0.5rem 1.5rem !important;
+}
+
+#aside {
+    margin: 0rem 6rem;
+}
+
+nav {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.cat a:link {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+
+.cat a:visited {
+    color: rgb(250, 250, 250);
+}
+
+.underline::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #0069f0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.cat>ul a:hover::after {
+    width: 100%;
+}
+
+.cat>ul>button a:hover::after {
+    width: 0%;
+    height: 0px;
+    background: transparent;
+}
+
+.cat>ul {
+    display: inline;
+    padding: 0;
+    position: absolute;
+    top: -4px;
+    right: 4px;
+    margin-top: 1.5rem;
+    margin-right: 6rem;
+}
+
+.cat>ul>li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    font-size: 1rem;
+}
+
+
+/* #head {
+    color: #ffffff;
+    text-align: center;
+} */
+
+header {
+    width: 100%;
+    height: 20vh;
+}
+
+.header>h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000000;
+    padding: 1.2rem 0rem;
+}
+
+
+/* SEGMENT 1 OPEN IMAGE*/
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120vh;
+    width: 100%;
+    background-image: url(image/hero_img.png);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* MAIN ARTICLE */
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7rem;
+}
+
+article>h1 {
+    color: #FCCC63;
+    font-size: 2rem;
+    line-height: 49px;
+    margin: 0rem;
+}
+
+article>h1>span {
+    color: #FCCC63;
+    font-size: 4rem;
+}
+
+article>p {
+    color: #ffffff;
+    line-height: 30px;
+}
+
+article>p>span {
+    color: #FCCC63;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+article>.btn {
+    background-color: #B23336;
+    width: 26%;
+}
+
+article>.btn>a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* WHY QUIDROO */
+
+.standard {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #ffffff;
+}
+
+.standard>.header {
+    width: 100%;
+    text-align: center;
+}
+
+.standard>.header>h1 {
+    color: #5E2A45;
+}
+
+.stand {
+    text-align: center;
+    align-items: center;
+    border-radius: 4%;
+}
+
+.stand>img {
+    max-width: 20%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.stand>.card-body {
+    padding: 2.25rem;
+}
+
+#transparent {
+    color: #65a488;
+    margin: 1rem 0rem 5rem;
+    box-shadow: 0 0px 0px 0 rgb(100 164 135 /0%), 0 6px 4px 0 rgb(100 164 135 / 33%)
+}
+
+#transparent>.card-body>p.card-text {
+    font-size: 12px;
+    color: #9C9999;
+}
+
+#accessible {
+    color: #f9bd77;
+    margin: 1rem 0rem 5rem;
+    box-shadow: 0 0px 0px 0 rgb(249 189 119 /0%), 0 6px 4px 0 rgb(249 189 119 / 100%)
+}
+
+#accessible>.card-body>p.card-text {
+    font-size: 12px;
+    color: #9C9999;
+}
+
+#fast {
+    background-color: #5f2b46;
+    color: #ffffff;
+    margin: 5rem 0rem 1rem;
+    box-shadow: 0 0px 0px 0 rgb(95 43 70 /0%), 0 3px 4px 0 rgb(95 43 70 / 33%)
+}
+
+#fast>.card-body>p.card-text {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+/* ABOUT US */
+
+#about {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #ffffff;
+}
+
+#about>.header {
+    width: 100%;
+    text-align: center;
+}
+
+#about>.header>h1 {
+    color: #5E2A45;
+}
+
+#water {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#water>.read>img {
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+#water>.growth>p {
+    color: #9C9999;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+
+/* HOW IT WORKS */
+
+@media (max-width: 770px) {
+    #footer>.feet {
+        display: none !important;
+    }
+}
+
+@media (min-width: 770px) {
+    #footer>.feeto {
+        display: none !important;
+    }
+}
+
+
+/* FOOTER */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: #ffffff;
+}
+
+#foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2rem;
+    background: transparent;
+}
+
+.coll {
+    width: 33.33%;
+    text-align: center;
+    background: transparent;
+}
+
+.coll>ul>li>a>img {
+    max-width: 50%;
+    height: auto;
+}
+
+.coll>ul>li>a {
+    list-style: none;
+    color: #000000;
+    text-decoration: none;
+}
+
+.coll>ul>li {
+    list-style: none;
+}
+
+.channels>li>a {
+    margin: 0rem 0.5rem;
+}
+
+.channels>li {
+    display: inline-block;
+    text-align: center;
+}
+
+.coll>ul {
+    text-align: center;
+}
+
+.coll>.fwork>li>a>img {
+    max-width: 30%;
+    height: auto;
+}
+
+.privacy>.us {
+    margin-left: 7rem;
+}
+
+.privacy>.ate {
+    margin-right: -2rem;
+}
+
+.sole {
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+}
+
+.sole>h6 {
+    font-weight: 400;
+}
+
+
+/* INTERMEIDIARIES VIEW */
+
+@media (max-width: 1040px) {
+    /* SEGMENT1 hERO */
+    #hero {
+        height: 50vh;
+        background-position: right;
+    }
+    /* ABOUT US */
+    #water>.growth>p {
+        padding: 2rem;
+        font-size: 18px;
+        margin-top: 0rem;
+    }
+    #water>.read>img {
+        padding: 2rem 2rem 0rem;
+    }
+}
+
+
+/* MOBILE VIEW */
+
+@media (max-width: 768px) {
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        font-family: "Poppins";
+    }
+    #aside {
+        margin: 0rem 0rem;
+    }
+    #aside>img {
+        max-width: 50%;
+        height: auto;
+    }
+    .mot>p {
+        width: 100%;
+    }
+    button>.navbar-toggler {
+        z-index: 2;
+    }
+    .cat>ul>li {
+        display: block;
+        padding: 0.2rem;
+    }
+    .cat>ul {
+        display: inline;
+        padding: 0;
+        position: absolute;
+        top: -2vh;
+        right: 0;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    .cat {
+        position: absolute;
+        background-color: #9e8f8f;
+        height: 30vh;
+        width: 100%;
+        top: 10vh;
+        text-align: right;
+        z-index: 6;
+    }
+    .cat>ul {
+        margin-right: 28px;
+    }
+    #hero {
+        height: 50vh;
+        background-position: right;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0rem;
+        text-align: center;
+    }
+    article>h1 {
+        color: #FCCC63;
+        font-size: 1rem;
+        line-height: 30px;
+    }
+    article>h1>span {
+        color: #FCCC63;
+        font-size: 2rem;
+    }
+    article>p {
+        color: #ffffff;
+        font-size: 0.7rem;
+        line-height: 20px;
+    }
+    article>p>span {
+        color: #FCCC63;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    article>.btn {
+        background-color: #B23336;
+        font-size: 1rem;
+        width: 73%;
+    }
+    article>.btn>a {
+        color: white;
+        text-decoration: none;
+    }
+    /* WHY QUIDROO */
+    .stand {
+        margin: 0rem 0rem 1rem !important;
+    }
+    .header>h1 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding: 1rem 0rem;
+        margin-bottom: 0rem;
+    }
+    /* ABOUT US */
+    #water>.growth>p {
+        /* font-size: 11px; */
+    }
+    /* FOOTER section */
+    .feeto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #foot {
+        flex-direction: column;
+    }
+    ul.channels {
+        margin-top: 1rem;
+    }
+    .coll {
+        width: 100%;
+        height: 30%;
+    }
+    .coll>ul {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+    .fwork>.eat {
+        margin-left: 0rem;
+    }
+    .privacy>.ate {
+        margin-right: 0rem;
+    }
+    .sole {
+        height: 7vh;
+    }
+    .sole>h6 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 511px) {
+    #water>.growth>p {
+        font-size: 10px;
+    }
+}

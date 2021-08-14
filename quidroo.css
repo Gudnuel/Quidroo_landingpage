@@ -10,12 +10,6 @@ body {
     margin: 0 !important;
 }
 
-
-/* .container-fluid {
-    padding: 0;
-    margin: 0;
-} */
-
 #aside>img {
     max-width: 65%;
     height: auto;
@@ -50,7 +44,7 @@ nav {
     content: "";
     width: 0%;
     height: 2px;
-    background: #0069f0;
+    background: #5E2A45;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -82,12 +76,6 @@ nav {
     margin: 0px 20px;
     font-size: 1rem;
 }
-
-
-/* #head {
-    color: #ffffff;
-    text-align: center;
-} */
 
 header {
     width: 100%;
@@ -288,8 +276,8 @@ article>.btn>a {
 }
 
 #work>.header>h1>span {
-    padding-bottom: 0.5rem;
-    border-bottom: 5px solid #EB008B;
+    padding-bottom: 0.2rem;
+    border-bottom: 3px solid #EB008B;
 }
 
 .talk {
@@ -365,6 +353,7 @@ article>.btn>a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     background: #ffffff;
+    margin-bottom: 2rem;
 }
 
 #launch>.header {
@@ -374,6 +363,40 @@ article>.btn>a {
 
 #launch>.header>h1 {
     color: #5E2A45;
+}
+
+form {
+    position: relative;
+}
+
+.control {
+    margin: 16px 0px;
+    background-color: rgba(196, 196, 196, 0.2) !important;
+    width: 476px !important;
+}
+
+::placeholder {
+    color: #5E2A45 !important;
+}
+
+.flog>.dance>label>span {
+    font-size: 15px;
+    margin-right: 85px;
+    color: #5E2A45;
+}
+
+.submit {
+    background-color: #5E2A45 !important;
+    color: #ffffff !important;
+    position: absolute;
+    right: 0rem;
+    padding: 0.5rem 4rem;
+}
+
+#water>.star>img {
+    max-width: 80%;
+    height: auto;
+    padding: 1rem;
 }
 
 @media (max-width: 770px) {
@@ -492,6 +515,11 @@ article>.btn>a {
     .gate>.body>p {
         font-size: small;
     }
+    /* LAUNCH NOTIFICATION */
+    .submit {
+        padding: 0.5rem 6rem !important;
+        left: 7rem;
+    }
 }
 
 
@@ -533,15 +561,18 @@ article>.btn>a {
     }
     .cat {
         position: absolute;
-        background-color: #9e8f8f;
-        height: 30vh;
+        background-color: rgb(158, 143, 143, 0.9);
+        height: 24vh;
         width: 100%;
-        top: 10vh;
+        top: 61px;
         text-align: right;
         z-index: 6;
     }
     .cat>ul {
         margin-right: 28px;
+    }
+    .cat>ul a:hover::after {
+        width: 0%;
     }
     #hero {
         height: 50vh;
@@ -635,6 +666,18 @@ article>.btn>a {
         color: #9C9999;
         font-size: 16px;
     }
+    /* LAUNCH NOTIFICATION */
+    .submit {
+        left: 4rem;
+    }
+    .control {
+        width: 380px !important;
+    }
+    .flog>.dance>label>span {
+        font-size: 13px;
+        margin-right: 29px;
+        color: #5E2A45;
+    }
     /* FOOTER section */
     .feeto {
         display: flex;
@@ -684,6 +727,25 @@ article>.btn>a {
 }
 
 @media (max-width: 380px) {
+    article>h1 {
+        font-size: 0.9rem;
+        line-height: 20px;
+    }
+    article>h1>span {
+        font-size: 1.5rem;
+    }
+    article>p {
+        font-size: 0.6rem;
+        line-height: 15px;
+    }
+    article>p>span {
+        font-size: 1rem;
+    }
+    article>.btn {
+        font-size: 0.8rem;
+        width: 92%
+    }
+    /*ABOUT US  */
     #water>.growth>p {
         font-size: 10px;
         padding: 0.5rem;
@@ -714,5 +776,78 @@ article>.btn>a {
     .blue>.body>p {
         margin-top: 27px !important;
         padding-right: 42px;
+    }
+    /*LAUNCH NOTIFICATION  */
+    .control {
+        width: 336px !important;
+    }
+    .flog>.dance>label>span {
+        font-size: 11px;
+        margin-right: 37px;
+    }
+    .submit {
+        left: 3rem;
+    }
+}
+
+@media (max-width: 325px) {
+    #water>.growth>p {
+        font-size: xx-small;
+        padding: 0.3rem;
+    }
+    .gate>.body>p {
+        font-size: 9px;
+        padding-left: 0px;
+    }
+    .hart>.gate>.fan>img {
+        max-width: 75% !important;
+    }
+    .lood>.body>p {
+        margin-top: 34px !important;
+        padding-right: 18px;
+    }
+    .brown>.body>p {
+        margin-top: 34px !important;
+        padding-right: 36px;
+    }
+    .green>.body>p {
+        margin-top: 34px !important;
+        padding-right: 13px;
+    }
+    .yello>.body>p {
+        margin-top: 30px !important;
+        padding-right: 18px;
+    }
+    .pink>.body>p {
+        margin-top: 25px !important;
+        padding-right: 11px;
+    }
+    .blue>.body>p {
+        margin-top: 19px !important;
+        padding-right: 28px;
+    }
+    /* LAUNCH NOTIFICATION */
+    .control {
+        width: 300px !important;
+    }
+    .submit {
+        left: 2rem;
+    }
+    .flog>.dance>label>span {
+        font-size: 10px;
+        margin-right: 36px;
+    }
+}
+
+@media (max-width: 280px) {
+    .control {
+        width: 255px !important;
+    }
+    .submit {
+        left: 0.2rem;
+    }
+    .flog>.dance>label>span {
+        font-size: 8px;
+        margin-right: 39px;
     }
 }

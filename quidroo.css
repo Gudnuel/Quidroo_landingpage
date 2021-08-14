@@ -10,10 +10,11 @@ body {
     margin: 0 !important;
 }
 
-.container-fluid {
+
+/* .container-fluid {
     padding: 0;
     margin: 0;
-}
+} */
 
 #aside>img {
     max-width: 65%;
@@ -269,15 +270,127 @@ article>.btn>a {
 
 /* HOW IT WORKS */
 
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+#work>.header {
+    width: 100%;
+    text-align: center;
+}
+
+#work>.header>h1 {
+    color: #5E2A45;
+}
+
+#work>.header>h1>span {
+    padding-bottom: 0.5rem;
+    border-bottom: 5px solid #EB008B;
+}
+
+.talk {
+    text-align: center;
+    color: #9C9999;
+}
+
+#chest {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0rem 6rem;
+}
+
+.gate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: fit-content;
+}
+
+.hart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0px;
+    height: fit-content;
+}
+
+.lood>.body>p {
+    margin-top: 40px !important;
+    padding-right: 2px;
+}
+
+.brown>.body>p {
+    margin-top: 40px !important;
+    padding-right: 48px;
+}
+
+.green>.body>p {
+    margin-top: 40px !important;
+    padding-right: 5px;
+}
+
+.yello>.body>p {
+    margin-top: 40px !important;
+    padding-right: 8px;
+}
+
+.pink>.body>p {
+    margin-top: 23px !important;
+    padding-right: 5px;
+}
+
+.blue>.body>p {
+    margin-top: 12px !important;
+    padding-right: 33px;
+}
+
+.gate>.body>p {
+    margin-bottom: 0rem;
+    padding-left: 13px;
+    color: #9C9999;
+}
+
+
+/* LAUNCH NOTIFICATION */
+
+#launch {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #ffffff;
+}
+
+#launch>.header {
+    width: 100%;
+    text-align: center;
+}
+
+#launch>.header>h1 {
+    color: #5E2A45;
+}
+
 @media (max-width: 770px) {
     #footer>.feet {
         display: none !important;
+    }
+    .talk {
+        display: none;
     }
 }
 
 @media (min-width: 770px) {
     #footer>.feeto {
         display: none !important;
+    }
+    .cry {
+        display: none
     }
 }
 
@@ -374,7 +487,10 @@ article>.btn>a {
         margin-top: 0rem;
     }
     #water>.read>img {
-        padding: 2rem 2rem 0rem;
+        padding: 0rem 1rem 0rem;
+    }
+    .gate>.body>p {
+        font-size: small;
     }
 }
 
@@ -477,7 +593,47 @@ article>.btn>a {
     }
     /* ABOUT US */
     #water>.growth>p {
-        /* font-size: 11px; */
+        font-size: 15px;
+    }
+    /* HOW IT WORKS */
+    #chest {
+        padding: 0rem 4rem;
+    }
+    .hart {
+        margin: 4px 0px;
+        justify-content: unset;
+    }
+    .hart>.gate>.fan>img {
+        max-width: 100% !important;
+    }
+    .lood>.body>p {
+        margin-top: 27px !important;
+        padding-right: 29px;
+    }
+    .brown>.body>p {
+        margin-top: 27px !important;
+        padding-right: 62px;
+    }
+    .green>.body>p {
+        margin-top: 27px !important;
+        padding-right: 25px;
+    }
+    .yello>.body>p {
+        margin-top: 27px !important;
+        padding-right: 35px;
+    }
+    .pink>.body>p {
+        margin-top: 23px !important;
+        padding-right: 18px;
+    }
+    .blue>.body>p {
+        margin-top: 12px !important;
+        padding-right: 52px;
+    }
+    .gate>.body>p {
+        padding-left: 14px;
+        color: #9C9999;
+        font-size: 16px;
     }
     /* FOOTER section */
     .feeto {
@@ -516,6 +672,47 @@ article>.btn>a {
 
 @media (max-width: 511px) {
     #water>.growth>p {
+        font-size: 0.7rem;
+        padding: 1rem;
+    }
+    #chest {
+        padding: 0rem 3rem;
+    }
+    .gate>.body>p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 380px) {
+    #water>.growth>p {
         font-size: 10px;
+        padding: 0.5rem;
+    }
+    .gate>.body>p {
+        font-size: 10px;
+    }
+    .lood>.body>p {
+        margin-top: 41px !important;
+        padding-right: 29px;
+    }
+    .brown>.body>p {
+        margin-top: 41px !important;
+        padding-right: 52px;
+    }
+    .green>.body>p {
+        margin-top: 41px !important;
+        padding-right: 25px;
+    }
+    .yello>.body>p {
+        margin-top: 41px !important;
+        padding-right: 35px;
+    }
+    .pink>.body>p {
+        margin-top: 33px !important;
+        padding-right: 18px;
+    }
+    .blue>.body>p {
+        margin-top: 27px !important;
+        padding-right: 42px;
     }
 }

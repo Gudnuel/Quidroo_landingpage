@@ -390,7 +390,7 @@ form {
     color: #ffffff !important;
     position: absolute;
     right: 0rem;
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 5rem !important;
 }
 
 #water>.star>img {
@@ -831,7 +831,7 @@ form {
         width: 300px !important;
     }
     .submit {
-        left: 2rem;
+        left: 1.5rem;
     }
     .flog>.dance>label>span {
         font-size: 10px;

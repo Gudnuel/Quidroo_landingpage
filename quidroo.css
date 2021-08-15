@@ -9,7 +9,9 @@ body {
     padding: 0 !important;
     margin: 0 !important;
 }
-
+.text-box >p{
+    color:#9C9999;
+}
 #aside>img {
     max-width: 65%;
     height: auto;
@@ -53,7 +55,10 @@ nav {
 .cat>ul a:hover::after {
     width: 100%;
 }
-
+.fan{
+    width: 120px;
+    height: 120px;
+}
 .cat>ul>button a:hover::after {
     width: 0%;
     height: 0px;
@@ -171,7 +176,21 @@ article>.btn>a {
     align-items: center;
     border-radius: 4%;
 }
+.box-flexy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:40%;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    padding-left:20px;
+    width:80%;
 
+}
 .stand>img {
     max-width: 20%;
     height: auto;
@@ -378,7 +397,12 @@ form {
 ::placeholder {
     color: #5E2A45 !important;
 }
-
+.messagei{
+    width: 50%;
+}
+.form-control{
+    color:#5E2A45!important;
+}
 .flog>.dance>label>span {
     font-size: 15px;
     margin-right: 85px;
@@ -400,6 +424,24 @@ form {
 }
 
 @media (max-width: 770px) {
+    .box-flexy {
+        width:100%;
+    }
+    .box-flexy > img{
+        width:30%;
+    }
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* height: 200px; */
+        /* padding-left: 20px; */
+        /* width: 80%; */
+    }
+    .messagei{
+        width: 80%;
+        font-size: 0.8rem;
+    }
     #footer>.feet {
         display: none !important;
     }
@@ -719,7 +761,7 @@ form {
         padding: 1rem;
     }
     #chest {
-        padding: 0rem 3rem;
+        padding: 0rem 2rem;
     }
     .gate>.body>p {
         font-size: 16px;
@@ -727,6 +769,9 @@ form {
 }
 
 @media (max-width: 380px) {
+    .body{
+        width:90%;
+    }
     article>h1 {
         font-size: 0.9rem;
         line-height: 20px;
@@ -751,31 +796,31 @@ form {
         padding: 0.5rem;
     }
     .gate>.body>p {
-        font-size: 10px;
+        font-size: 15px;
     }
     .lood>.body>p {
-        margin-top: 41px !important;
+        margin-top: 15px !important;
         padding-right: 29px;
     }
     .brown>.body>p {
-        margin-top: 41px !important;
-        padding-right: 52px;
+        margin-top: 15px !important;
+        padding-right: 0;
     }
     .green>.body>p {
-        margin-top: 41px !important;
-        padding-right: 25px;
+        margin-top: 15px !important;
+        padding-right: 0;
     }
     .yello>.body>p {
-        margin-top: 41px !important;
-        padding-right: 35px;
+        margin-top: 15px !important;
+        padding-right: 0;
     }
     .pink>.body>p {
-        margin-top: 33px !important;
-        padding-right: 18px;
+        margin-top: 0 !important;
+        padding-right: 0;
     }
     .blue>.body>p {
-        margin-top: 27px !important;
-        padding-right: 42px;
+        margin-top: 0 !important;
+        padding-right: 0;
     }
     /*LAUNCH NOTIFICATION  */
     .control {

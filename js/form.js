@@ -1,8 +1,7 @@
-
-base_url_local="http://127.0.0.1:8000/server"
+base_url_local = "http://127.0.0.1:8000/server"
 base_url = "https://roca-ajanaku.herokuapp.com/server"
-$(function(){
-    $('#form_submit_button').on('click', function (e) {
+$(function() {
+    $('#form_submit_button').on('click', function(e) {
         e.preventDefault();
         console.log("form clicked");
         let name = $("#name").val();
@@ -14,14 +13,13 @@ $(function(){
         let confirm_female_cofounder = null
         let female_cofounder = document.getElementById("female_cofounder");
 
-        if (female_cofounder.checked == false){
+        if (female_cofounder.checked == false) {
             confirm_female_cofounder = "No"
-        }
-        else{
+        } else {
             confirm_female_cofounder = "Yes"
         }
-        
-        let data={
+
+        let data = {
             name: name,
             company: company,
             email: email,
@@ -32,25 +30,22 @@ $(function(){
 
         }
         $.ajax({
-            url:base_url+'/quidroo',
-            type:'POST',
+            url: base_url + '/quidroo',
+            type: 'POST',
             contentType: "application/json; charset=utf-8",
             dataType: "json",
-            data:JSON.stringify(data),
-            success: function(response)
-            {
-                
-                if(response.success === true && response.status === 200){
+            data: JSON.stringify(data),
+            success: function(response) {
+
+                if (response.success === true && response.status === 200) {
                     document.getElementById("data-form").style.display = "none";
                     document.getElementById("star-talk").style.display = "none";
                     document.getElementById("image-div").style.display = "block";
                     document.getElementById('message-202').innerHTML = '';
                     document.getElementById('message').innerHTML = response.message;
-                }
-                else if (response.success === false && response.status === 202){
+                } else if (response.success === false && response.status === 202) {
                     document.getElementById('message-202').innerHTML = response.message;
-                }
-                else{
+                } else {
                     document.getElementById('message-202').innerHTML = '';
                     document.getElementById("data-form").style.display = "none";
                     document.getElementById("star-talk").style.display = "none";
@@ -58,15 +53,12 @@ $(function(){
                     document.getElementById('message-fail').innerHTML = response.message;
                 }
                 console.log("SUCCESSFUL RESPONSE: ", response)
-                
+
             },
-            error: function(error)
-                {
-                    console.log("ERROR: ", error)  
-                }
+            error: function(error) {
+                console.log("ERROR: ", error)
+            }
         });
         return false;
-})});
-
-
-
+    })
+});

@@ -9,9 +9,11 @@ body {
     padding: 0 !important;
     margin: 0 !important;
 }
-.text-box >p{
-    color:#9C9999;
+
+.text-box>p {
+    color: #9C9999;
 }
+
 #aside>img {
     max-width: 65%;
     height: auto;
@@ -55,10 +57,12 @@ nav {
 .cat>ul a:hover::after {
     width: 100%;
 }
-.fan{
+
+.fan {
     width: 120px;
     height: 120px;
 }
+
 .cat>ul>button a:hover::after {
     width: 0%;
     height: 0px;
@@ -176,21 +180,23 @@ article>.btn>a {
     align-items: center;
     border-radius: 4%;
 }
-.box-flexy{
+
+.box-flexy {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width:40%;
+    width: 40%;
 }
-.text-box{
+
+.text-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 200px;
-    padding-left:20px;
-    width:80%;
-
+    height: 150px;
+    padding-left: 20px;
+    width: 80%;
 }
+
 .stand>img {
     max-width: 20%;
     height: auto;
@@ -260,6 +266,7 @@ article>.btn>a {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    margin: 0rem 9rem;
 }
 
 #water>.read>img {
@@ -268,10 +275,16 @@ article>.btn>a {
     padding: 1rem;
 }
 
+.growth {
+    width: 45%;
+    margin-top: 1.5rem;
+}
+
 #water>.growth>p {
     color: #9C9999;
     width: 100%;
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
 }
 
 
@@ -384,8 +397,8 @@ article>.btn>a {
     color: #5E2A45;
 }
 
-form {
-    position: relative;
+#mantion {
+    text-align: -webkit-center !important;
 }
 
 .control {
@@ -397,12 +410,15 @@ form {
 ::placeholder {
     color: #5E2A45 !important;
 }
-.messagei{
+
+.messagei {
     width: 50%;
 }
-.form-control{
-    color:#5E2A45!important;
+
+.form-control {
+    color: #5E2A45!important;
 }
+
 .flog>.dance>label>span {
     font-size: 15px;
     margin-right: 85px;
@@ -412,9 +428,10 @@ form {
 .submit {
     background-color: #5E2A45 !important;
     color: #ffffff !important;
-    position: absolute;
-    right: 0rem;
+    /* position: absolute; */
+    /* right: 0rem; */
     padding: 0.5rem 5rem !important;
+    margin-left: 16rem;
 }
 
 #water>.star>img {
@@ -425,10 +442,10 @@ form {
 
 @media (max-width: 770px) {
     .box-flexy {
-        width:100%;
+        width: 100%;
     }
-    .box-flexy > img{
-        width:30%;
+    .box-flexy>img {
+        width: 30%;
     }
     .text-box {
         display: flex;
@@ -438,7 +455,7 @@ form {
         /* padding-left: 20px; */
         /* width: 80%; */
     }
-    .messagei{
+    .messagei {
         width: 80%;
         font-size: 0.8rem;
     }
@@ -546,10 +563,16 @@ form {
         background-position: right;
     }
     /* ABOUT US */
+    #water {
+        margin: 0rem;
+    }
+    .growth {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
     #water>.growth>p {
-        padding: 2rem;
-        font-size: 18px;
-        margin-top: 0rem;
+        font-size: 1rem;
+        padding: 0rem 5rem;
     }
     #water>.read>img {
         padding: 0rem 1rem 0rem;
@@ -557,10 +580,16 @@ form {
     .gate>.body>p {
         font-size: small;
     }
+    .text-box {
+        height: 140px;
+    }
     /* LAUNCH NOTIFICATION */
     .submit {
-        padding: 0.5rem 6rem !important;
-        left: 7rem;
+        padding: 0.5rem 10rem !important;
+        margin-left: 0rem;
+    }
+    #mantion {
+        text-align: -webkit-center !important;
     }
 }
 
@@ -666,11 +695,18 @@ form {
     }
     /* ABOUT US */
     #water>.growth>p {
-        font-size: 15px;
+        font-size: 1rem;
+        padding: 0rem 4rem;
     }
     /* HOW IT WORKS */
     #chest {
         padding: 0rem 4rem;
+    }
+    .text-box {
+        height: 200px;
+    }
+    .text-box>p {
+        font-size: 1rem;
     }
     .hart {
         margin: 4px 0px;
@@ -710,7 +746,8 @@ form {
     }
     /* LAUNCH NOTIFICATION */
     .submit {
-        left: 4rem;
+        /* left: 4rem; */
+        margin-left: 0rem;
     }
     .control {
         width: 380px !important;
@@ -756,12 +793,18 @@ form {
 }
 
 @media (max-width: 511px) {
+    .growth {
+        margin-top: 0.5rem;
+    }
     #water>.growth>p {
-        font-size: 0.7rem;
-        padding: 1rem;
+        font-size: 1rem;
+        padding: 0rem 1rem;
     }
     #chest {
         padding: 0rem 2rem;
+    }
+    .text-box {
+        height: 100px;
     }
     .gate>.body>p {
         font-size: 16px;
@@ -769,12 +812,12 @@ form {
 }
 
 @media (max-width: 380px) {
-    .body{
-        width:90%;
+    .body {
+        width: 90%;
     }
     article>h1 {
-        font-size: 0.9rem;
-        line-height: 20px;
+        font-size: smaller;
+        padding: 0rem 1rem;
     }
     article>h1>span {
         font-size: 1.5rem;
@@ -791,9 +834,12 @@ form {
         width: 92%
     }
     /*ABOUT US  */
+    .growth {
+        margin-top: 0.5rem;
+    }
     #water>.growth>p {
-        font-size: 10px;
-        padding: 0.5rem;
+        font-size: 12px;
+        padding: 0rem 1rem;
     }
     .gate>.body>p {
         font-size: 15px;
@@ -831,14 +877,17 @@ form {
         margin-right: 37px;
     }
     .submit {
-        left: 3rem;
+        padding: 0.5rem 8rem !important;
     }
 }
 
 @media (max-width: 325px) {
+    .growth {
+        margin-top: 0.5rem;
+    }
     #water>.growth>p {
-        font-size: xx-small;
-        padding: 0.3rem;
+        font-size: smaller;
+        padding: 0rem 1rem;
     }
     .gate>.body>p {
         font-size: 9px;
@@ -871,12 +920,15 @@ form {
         margin-top: 19px !important;
         padding-right: 28px;
     }
+    .text-box>p {
+        font-size: 0.8rem;
+    }
     /* LAUNCH NOTIFICATION */
     .control {
         width: 300px !important;
     }
     .submit {
-        left: 1.5rem;
+        padding: 0.5rem 7rem !important;
     }
     .flog>.dance>label>span {
         font-size: 10px;
@@ -889,7 +941,7 @@ form {
         width: 255px !important;
     }
     .submit {
-        left: 0.2rem;
+        padding: 0.5rem 6rem !important;
     }
     .flog>.dance>label>span {
         font-size: 8px;
